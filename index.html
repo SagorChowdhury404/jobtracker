@@ -34,16 +34,16 @@
         <section class="grid md:grid-cols-3  grid-cols-1 gap-5">
             <div class=" p-5  bg-slate-100 w-full ">
                 <p>Total</p>
-                <h1 class="text-2xl text-black">1</h1>
+                <h1 id="totalJobCount" class="text-2xl text-black">0</h1>
             </div>
             <div class=" p-5 bg-slate-100  w-full ">
                 <p>Interview</p>
-                <h1 class="text-2xl text-green-400 ">1</h1>
+                <h1 id="totalInterviewCount" class="text-2xl text-green-400 ">0</h1>
 
             </div>
             <div class=" p-5  w-full bg-slate-100  ">
                 <p>Rejected</p>
-                <h1 class="text-2xl text-red-500">3</h1>
+                <h1 id="totalRejectedCount" class="text-2xl text-red-500">3</h1>
             </div>
         </section>
 
@@ -66,12 +66,13 @@
 
         </section>
 
-        <!-- card section  -->
+        <!-- card section   -->
+
+        <section id="allCards" class=" container mx-auto w-[80%]">
 
 
-        <section class=" container mx-auto w-[80%]   ">
+        <!-- card 1  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
-
                 <div class="my-5 ">
                     <h1 class="font-bold text-xl"> Mobile First Corp</h1>
                     <p class="text-sm"> React Native Developer</p>
@@ -80,21 +81,86 @@
                         <p>Full-time job</p>
                         <p>$<span>17500</span></p>
                     </div>
-                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4"
-                        type="submit">
+                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4" type="submit">
                         Not Applied
                     </button>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="all-filter-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
-                            type="submit"> Interview
+                        <button id="Interview-btn"
+                            class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500" type="submit">
+                            Interview
                         </button>
-                        <button id="all-filter-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
+                        <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
                             type="submit"> Rejected
                         </button>
                     </div>
                 </div>
 
+                <div>
+                    <button id="all-filter-btn" class="bg-slate-200 hover:bg-red-600 rounded px-8 py-2 m-2"
+                        type="submit">
+                        Delete
+                    </button>
+                </div>
+
+            </section>
+        <!-- card 2  -->
+            <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
+                <div class="my-5 ">
+                    <h1 class="font-bold text-xl"> Mobile First Corp</h1>
+                    <p class="text-sm"> React Native Developer</p>
+                    <div class="flex gap-5 my-2">
+                        <p> Remote</p>
+                        <p>Full-time job</p>
+                        <p>$<span>17500</span></p>
+                    </div>
+                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4" type="submit">
+                        Not Applied
+                    </button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <div>
+                        <button id="Interview-btn"
+                            class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500" type="submit">
+                            Interview
+                        </button>
+                        <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
+                            type="submit"> Rejected
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <button id="all-filter-btn" class="bg-slate-200 hover:bg-red-600 rounded px-8 py-2 m-2"
+                        type="submit">
+                        Delete
+                    </button>
+                </div>
+
+            </section>
+        <!-- card 3  -->
+            <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
+                <div class="my-5 ">
+                    <h1 class="font-bold text-xl"> Mobile First Corp</h1>
+                    <p class="text-sm"> React Native Developer</p>
+                    <div class="flex gap-5 my-2">
+                        <p> Remote</p>
+                        <p>Full-time job</p>
+                        <p>$<span>17500</span></p>
+                    </div>
+                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4" type="submit">
+                        Not Applied
+                    </button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <div>
+                        <button id="Interview-btn"
+                            class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500" type="submit">
+                            Interview
+                        </button>
+                        <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
+                            type="submit"> Rejected
+                        </button>
+                    </div>
+                </div>
 
                 <div>
                     <button id="all-filter-btn" class="bg-slate-200 hover:bg-red-600 rounded px-8 py-2 m-2"
