@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job tracker</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- google font outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="w-[80%] container mx-auto pt-5">
+
+        <h1 class="font-extrabold text-3xl my-3"> Application job Tracker</h1>
+        <section class="grid md:grid-cols-3  grid-cols-1 gap-5">
+            <div class=" p-5  bg-slate-100 w-full ">
+                <p>Total</p>
+                <h1 class="text-2xl text-black">1</h1>
+            </div>
+            <div class=" p-5 bg-slate-100  w-full ">
+                <p>Interview</p>
+                <h1 class="text-2xl text-green-400 ">1</h1>
+
+            </div>
+            <div class=" p-5  w-full bg-slate-100  ">
+                <p>Rejected</p>
+                <h1 class="text-2xl text-red-500">3</h1>
+            </div>
+        </section>
+
+        <hr class="mt-10">
+
+
+    </header>
+
+    <main class="">
+        <section class="text-xl w-[80%]  container mx-auto  ">
+            <h1 class="font-extrabold text-2xl my-5"> Available Job</h1>
+            <button id="all-filter-btn" class="bg-slate-200 hover:bg-blue-600 rounded  px-8 py-2 m-2" type="submit"> All
+            </button>
+            <button id="applied-filter-btn" class="bg-slate-200 hover:bg-blue-600 rounded  px-8 py-2 m-2" type="submit">
+                applied
+            </button>
+            <button id="rejects-filter-btn" class="bg-slate-200 hover:bg-blue-600 rounded px-8 py-2 m-2" type="submit">
+                rejects
+            </button>
+
+        </section>
+
+        <!-- card section  -->
+
+
+        <section class=" container mx-auto w-[80%]   ">
+            <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
+
+                <div class="my-5 ">
+                    <h1 class="font-bold text-xl"> Mobile First Corp</h1>
+                    <p class="text-sm"> React Native Developer</p>
+                    <div class="flex gap-5 my-2">
+                        <p> Remote</p>
+                        <p>Full-time job</p>
+                        <p>$<span>17500</span></p>
+                    </div>
+                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4"
+                        type="submit">
+                        Not Applied
+                    </button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <div>
+                        <button id="all-filter-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                            type="submit"> Interview
+                        </button>
+                        <button id="all-filter-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
+                            type="submit"> Rejected
+                        </button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <button id="all-filter-btn" class="bg-slate-200 hover:bg-red-600 rounded px-8 py-2 m-2"
+                        type="submit">
+                        Delete
+                    </button>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script/tracker.js"></script>
+</body>
+
+</html>
