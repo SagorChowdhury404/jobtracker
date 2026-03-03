@@ -55,12 +55,16 @@
     <main class="">
         <section class="text-xl w-[80%]  container mx-auto  ">
             <h1 class="font-extrabold text-2xl my-5"> Available Job</h1>
-            <button id="all-filter-btn" class="bg-slate-200 hover:bg-blue-600 rounded  px-8 py-2 m-2" type="submit"> All
+
+            <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
+                class="bg-slate-200 text-black hover:bg-blue-600 rounded  px-8 py-2 m-2" type="submit"> All
             </button>
-            <button id="applied-filter-btn" class="bg-slate-200 hover:bg-blue-600 rounded  px-8 py-2 m-2" type="submit">
+            <button onclick="toggleStyle('applied-filter-btn')" id="applied-filter-btn"
+                class="bg-slate-200 text-black  hover:bg-blue-600 rounded  px-8 py-2 m-2" type="submit">
                 applied
             </button>
-            <button id="rejects-filter-btn" class="bg-slate-200 hover:bg-blue-600 rounded px-8 py-2 m-2" type="submit">
+            <button onclick="toggleStyle('rejects-filter-btn')" id="rejects-filter-btn"
+                class="bg-slate-200 text-black hover:bg-blue-600 rounded px-8 py-2 m-2" type="submit">
                 rejects
             </button>
 
@@ -71,7 +75,7 @@
         <section id="allCards" class=" container mx-auto w-[80%]">
 
 
-        <!-- card 1  -->
+            <!-- card 1  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
                 <div class="my-5 ">
                     <h1 class="font-bold text-xl"> Mobile First Corp</h1>
@@ -86,8 +90,8 @@
                     </button>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="Interview-btn"
-                            class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500" type="submit">
+                        <button id="Interview-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                            type="submit">
                             Interview
                         </button>
                         <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
@@ -104,7 +108,7 @@
                 </div>
 
             </section>
-        <!-- card 2  -->
+            <!-- card 2  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
                 <div class="my-5 ">
                     <h1 class="font-bold text-xl"> Mobile First Corp</h1>
@@ -119,8 +123,8 @@
                     </button>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="Interview-btn"
-                            class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500" type="submit">
+                        <button id="Interview-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                            type="submit">
                             Interview
                         </button>
                         <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
@@ -137,7 +141,7 @@
                 </div>
 
             </section>
-        <!-- card 3  -->
+            <!-- card 3  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
                 <div class="my-5 ">
                     <h1 class="font-bold text-xl"> Mobile First Corp</h1>
@@ -152,8 +156,8 @@
                     </button>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="Interview-btn"
-                            class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500" type="submit">
+                        <button id="Interview-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                            type="submit">
                             Interview
                         </button>
                         <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
