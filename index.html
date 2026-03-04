@@ -43,7 +43,7 @@
             </div>
             <div class=" p-5  w-full bg-slate-100  ">
                 <p>Rejected</p>
-                <h1 id="totalRejectedCount" class="text-2xl text-red-500">3</h1>
+                <h1 id="totalRejectedCount" class="text-2xl text-red-500">0</h1>
             </div>
         </section>
 
@@ -70,32 +70,42 @@
 
         </section>
 
+
+        <!-- filtered card  -->
+        <section id="filtered-section" class=" container mx-auto w-[80%] hidden">
+
+        </section>
+        <hr class="my-5">
+
         <!-- card section   -->
 
         <section id="allCards" class=" container mx-auto w-[80%]">
 
-
+            <!-- // companyName jobTittle workside dutyhours salary description InterviewBtn RejectedBtn -->
             <!-- card 1  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
                 <div class="my-5 ">
-                    <h1 class="font-bold text-xl"> Mobile First Corp</h1>
-                    <p class="text-sm"> React Native Developer</p>
+                    <h1 class=" companyName font-bold text-xl"> Mobile First Corp</h1>
+                    <p class="jobTittle text-sm"> React Native Developer</p>
                     <div class="flex gap-5 my-2">
-                        <p> Remote</p>
-                        <p>Full-time job</p>
-                        <p>$<span>17500</span></p>
+                        <p class="workSide"> Remote</p>
+                        <p class="dutyHours">Full-time job</p>
+                        <p>$<span class="salary">17500</span></p>
                     </div>
-                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4" type="submit">
+                    <button id="all-filter-btn" class="statusAbout bg-slate-200 rounded-xl px-2 py-2 mt-4 "
+                        type="submit">
                         Not Applied
                     </button>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="Interview-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                        <button id="Interview-btn"
+                            class="InterviewBtn  border border-green-500 rounded px-8 py-2 m-2 text-green-500"
                             type="submit">
                             Interview
                         </button>
-                        <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
-                            type="submit"> Rejected
+                        <button id="Rejected-btn"
+                            class=" RejectedBtn border border-red-600 rounded px-8 py-2 m-2 text-red-600" type="submit">
+                            Rejected
                         </button>
                     </div>
                 </div>
@@ -111,24 +121,26 @@
             <!-- card 2  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
                 <div class="my-5 ">
-                    <h1 class="font-bold text-xl"> Mobile First Corp</h1>
-                    <p class="text-sm"> React Native Developer</p>
+                    <h1 class=" companyName font-bold text-xl"> Web flow agency</h1>
+                    <p class="jobTittle text-sm"> React Native Developer</p>
                     <div class="flex gap-5 my-2">
-                        <p> Remote</p>
-                        <p>Full-time job</p>
-                        <p>$<span>17500</span></p>
+                        <p class="workSide"> Remote</p>
+                        <p class="dutyHours">Full-time job</p>
+                        <p>$<span class="salary">17500</span></p>
                     </div>
-                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4" type="submit">
+                    <button class="statusAbout bg-slate-200 rounded-xl px-2 py-2 mt-4">
                         Not Applied
                     </button>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="Interview-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                        <button id="Interview-btn"
+                            class="InterviewBtn  border border-green-500 rounded px-8 py-2 m-2 text-green-500"
                             type="submit">
                             Interview
                         </button>
-                        <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
-                            type="submit"> Rejected
+                        <button id="Rejected-btn"
+                            class=" RejectedBtn border border-red-600 rounded px-8 py-2 m-2 text-red-600" type="submit">
+                            Rejected
                         </button>
                     </div>
                 </div>
@@ -144,24 +156,27 @@
             <!-- card 3  -->
             <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
                 <div class="my-5 ">
-                    <h1 class="font-bold text-xl"> Mobile First Corp</h1>
-                    <p class="text-sm"> React Native Developer</p>
+                    <h1 class=" companyName font-bold text-xl"> Data viz</h1>
+                    <p class="jobTittle text-sm"> React Native Developer</p>
                     <div class="flex gap-5 my-2">
-                        <p> Remote</p>
-                        <p>Full-time job</p>
-                        <p>$<span>17500</span></p>
+                        <p class="workSide"> Remote</p>
+                        <p class="dutyHours">Full-time job</p>
+                        <p>$<span class="salary">17500</span></p>
                     </div>
-                    <button id="all-filter-btn" class="bg-slate-200 rounded-xl px-2 py-2 mt-4" type="submit">
+                    <button id="all-filter-btn" class="statusAbout bg-slate-200 rounded-xl px-2 py-2 mt-4 "
+                        type="submit">
                         Not Applied
                     </button>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
                     <div>
-                        <button id="Interview-btn" class=" border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                        <button id="Interview-btn"
+                            class="InterviewBtn  border border-green-500 rounded px-8 py-2 m-2 text-green-500"
                             type="submit">
                             Interview
                         </button>
-                        <button id="Rejected-btn" class="border border-red-600 rounded px-8 py-2 m-2 text-red-600"
-                            type="submit"> Rejected
+                        <button id="Rejected-btn"
+                            class=" RejectedBtn border border-red-600 rounded px-8 py-2 m-2 text-red-600" type="submit">
+                            Rejected
                         </button>
                     </div>
                 </div>
@@ -174,6 +189,43 @@
                 </div>
 
             </section>
+            <!-- card 3  -->
+            <section class=" flex  justify-between border p-5 my-5  bg-slate-50 shadow">
+                <div class="my-5 ">
+                    <h1 class=" companyName font-bold text-xl"> cloud first</h1>
+                    <p class="jobTittle text-sm"> React Native Developer</p>
+                    <div class="flex gap-5 my-2">
+                        <p class="workSide"> Remote</p>
+                        <p class="dutyHours">Full-time job</p>
+                        <p>$<span class="salary">17500</span></p>
+                    </div>
+                    <button id="all-filter-btn" class="statusAbout bg-slate-200 rounded-xl px-2 py-2 mt-4 "
+                        type="submit">
+                         Applied
+                    </button>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui.</p>
+                    <div>
+                        <button id="Interview-btn"
+                            class="InterviewBtn  border border-green-500 rounded px-8 py-2 m-2 text-green-500"
+                            type="submit">
+                            Interview
+                        </button>
+                        <button id="Rejected-btn"
+                            class=" RejectedBtn border border-red-600 rounded px-8 py-2 m-2 text-red-600" type="submit">
+                            Rejected
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <button id="all-filter-btn" class="bg-slate-200 hover:bg-red-600 rounded px-8 py-2 m-2"
+                        type="submit">
+                        Delete
+                    </button>
+                </div>
+
+            </section>
+
 
         </section>
 
